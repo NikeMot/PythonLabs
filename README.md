@@ -59,21 +59,21 @@ PythonLabs/
 │   ├── 03-functions/
 │   ├── 04-lists/
 │   ├── 05-dictionaries-and-structuring-data/
-│   ├── 06-manipulating-strings/
+│   ├── 06-working-with-strings/
 │   ├── 07-pattern-matching-with-regular-expressions/
-│   ├── 08-input-validation/
-│   ├── 09-reading-and-writing-files/
+│   ├── 08-validating-user-input/
+│   ├── 09-file-io/
 │   ├── 10-organizing-files/
 │   ├── 11-debugging/
 │   ├── 12-web-scraping/
-│   ├── 13-working-with-excel-spreadsheets/
-│   ├── 14-working-with-google-sheets/
-│   ├── 15-working-with-pdf-and-word-documents/
-│   ├── 16-working-with-csv-files-and-json-data/
-│   ├── 17-keeping-time-scheduling-tasks-and-launching-programs/
-│   ├── 18-sending-email-and-text-messages/
-│   ├── 19-manipulating-images/
-│   └── 20-controlling-the-keyboard-and-mouse-with-gui-automation/
+│   ├── 13-excel-spreadsheets/
+│   ├── 14-cloud-spreadsheets/
+│   ├── 15-pdf-and-word-documents/
+│   ├── 16-csv-and-json-data/
+│   ├── 17-time-scheduling-and-program-launching/
+│   ├── 18-email-and-messaging/
+│   ├── 19-images/
+│   └── 20-gui-automation/
 └── scripts/
 ```
 
