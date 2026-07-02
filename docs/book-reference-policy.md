@@ -2,77 +2,130 @@
 
 ## Purpose
 
-This document defines how reference books should be used in PythonLabs.
+This document defines the simplified book policy for PythonLabs.
 
-The lab series should use complete chapters as study units. It should not be built from scattered small extracts.
+The previous reference model was too broad. PythonLabs should not pull from many different programming books at once.
 
-## Main Rule
+The lab series now uses:
 
-When a book is used in a lab, use a full chapter as the reference unit.
+1. **one main Python book**
+2. **one companion Python development book**
+3. **official online documentation** for current tools and version-specific behaviour
 
-A reference should be written like this:
+## Core Rule
+
+Use only two books by default.
+
+| Role | Book | Purpose |
+| --- | --- | --- |
+| Main Python book | Automate the Boring Stuff with Python | Core Python learning path and chapter-lab structure |
+| Development companion book | Beyond the Basic Stuff with Python | Professional Python development habits, debugging, readability, project organisation, code quality, OOP, and Big-O |
+
+No other book should be added to normal lab references unless the learner explicitly asks for it.
+
+## Main Python Book Rule
+
+The first 20 labs should follow **Automate the Boring Stuff with Python** as the primary Python book.
+
+That book controls:
+
+* the chapter sequence
+* the primary topic of each lab
+* the folder name
+* the new Python concept introduced in Part 1
+
+Use full chapters, not small fragments.
+
+Reference format:
 
 ```text
-Book Title — Chapter X: Chapter Title
+Automate the Boring Stuff with Python — Chapter X: Chapter Title
 ```
 
-## Primary Chapter Rule
+## Development Companion Book Rule
 
-Each of the first 20 labs has one primary chapter from **Automate the Boring Stuff with Python**.
+Use **Beyond the Basic Stuff with Python** as the single companion book for Python development practice.
 
-That chapter decides:
+Use it when a lab needs development discipline such as:
 
-* the lab topic
-* the lab folder
-* the main Python concept
-* the expected difficulty
+* dealing with errors
+* command-line confidence
+* code formatting
+* readable names
+* code smells
+* Pythonic code
+* common Python gotchas
+* effective functions
+* comments, docstrings, and type hints
+* project organisation with Git
+* performance and Big-O
+* object-oriented programming
 
-Example:
+Use full chapters, not small fragments.
+
+Reference format:
 
 ```text
-Primary reference: Automate the Boring Stuff with Python — Chapter 4: Lists
-Folder: labs/04-lists/
+Beyond the Basic Stuff with Python — Chapter X: Chapter Title
 ```
 
-## Supplementary Chapter Rule
+## Official Online Documentation Rule
 
-Other books may be used to strengthen the lab, but they should also be used as full chapters.
+Use official online documentation for anything that changes over time or depends on current tool behaviour.
 
 Examples:
 
-| Area | Reference style |
+| Area | Main authority |
 | --- | --- |
-| Python fundamentals | Learning Python — full relevant chapter |
-| Idiomatic Python | Fluent Python — full relevant chapter |
-| Testing | Test-Driven Development with Python — full relevant chapter |
-| Design | A Philosophy of Software Design — full relevant chapter |
-| Algorithms | The Algorithm Design Manual — full relevant chapter |
-| SQL | SQL book or official database guide — full relevant chapter or full guide page |
-| Docker | Docker documentation — full guide page |
-| Grafana | Grafana documentation — full guide page |
-| AI APIs | Official API documentation — full guide page |
+| Python syntax and standard library | Python official documentation |
+| pytest | pytest documentation |
+| SQLite | Python `sqlite3` documentation and SQLite documentation |
+| Docker | Docker documentation |
+| Docker Compose | Docker documentation |
+| Grafana | Grafana documentation |
+| GitHub Actions | GitHub Actions documentation |
+| AI APIs | official provider documentation |
+| third-party libraries | official library documentation |
+
+Official documentation is not counted as an extra book.
+
+## What Not to Do
+
+Do not add a large reading list to each lab.
+
+Do not reference lots of books such as:
+
+* Learning Python
+* Fluent Python
+* Test-Driven Development with Python
+* Architecture Patterns with Python
+* A Philosophy of Software Design
+* The Algorithm Design Manual
+* Clean Code
+* Effective Python
+
+These may be useful later, but they are not part of the default PythonLabs reference system.
 
 ## Lab Reference Format
 
-Each lab should use this table style:
+Each lab should use this simple table:
 
-| Role | Reference | Used for |
-| --- | --- | --- |
-| Primary | Automate the Boring Stuff with Python — Chapter X: Title | Main lab topic |
-| Supplementary | Book Title — Chapter Y: Title | Deeper understanding |
-| Tooling | Official documentation — full guide page | Tool commands or current API behaviour |
+| Role | Reference | Used for | Date checked |
+| --- | --- | --- | --- |
+| Main Python book | Automate the Boring Stuff with Python — Chapter X | New chapter content | YYYY-MM-DD |
+| Development companion | Beyond the Basic Stuff with Python — Chapter Y | Development practice, if relevant | YYYY-MM-DD |
+| Official docs | Official documentation page | Current commands, APIs, or library behaviour | YYYY-MM-DD |
 
-## If a Chapter Is Large
+The companion book row should only appear when it is genuinely useful for that lab.
 
-A lab may focus on the parts of a chapter needed for the build, but the reference remains the full chapter.
+## Timebox Protection
 
-Example:
+The two-book policy supports the 60–90 minute lab timebox.
 
-```text
-Reference: Learning Python — full chapter on functions
-Lab focus: function definitions, parameters, return values, and scope
-```
+References should support the lab. They should not turn the lab into a reading assignment.
 
-## Reason
+## Final Rule
 
-Full-chapter references make the series more rigorous. They show that the learner is studying complete concepts and then applying them in practical tools.
+One Python book. One Python development book. Official documentation for current tooling.
+
+Keep the references focused so the learner spends most of the session solving the lab, breaking and fixing things, testing, and explaining the result.
